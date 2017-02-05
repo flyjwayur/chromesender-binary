@@ -791,7 +791,7 @@ cast.games.common.sender.setup.onCastError_ = function(error) {
 var gameManagerClient = null, timeoutObject, lastMessageWasFire = !0, HUMAN_PLAYER_ID_SUFFIXES = {WSD:"WSD", IKL:"IKL", ARROW:"ARROW", NUMPAD:"NUMPAD"}, keyCodeActionMap = {87:{keySet:HUMAN_PLAYER_ID_SUFFIXES.WSD, fire:!1, move:-.1}, 83:{keySet:HUMAN_PLAYER_ID_SUFFIXES.WSD, fire:!1, move:.1}, 68:{keySet:HUMAN_PLAYER_ID_SUFFIXES.WSD, fire:!0, move:0}, 73:{keySet:HUMAN_PLAYER_ID_SUFFIXES.IKL, fire:!1, move:-.1}, 75:{keySet:HUMAN_PLAYER_ID_SUFFIXES.IKL, fire:!1, move:.1}, 76:{keySet:HUMAN_PLAYER_ID_SUFFIXES.IKL,
 fire:!0, move:0}, 38:{keySet:HUMAN_PLAYER_ID_SUFFIXES.ARROW, fire:!1, move:-.1}, 40:{keySet:HUMAN_PLAYER_ID_SUFFIXES.ARROW, fire:!1, move:.1}, 39:{keySet:HUMAN_PLAYER_ID_SUFFIXES.ARROW, fire:!0, move:0}, 104:{keySet:HUMAN_PLAYER_ID_SUFFIXES.NUMPAD, fire:!1, move:-.1}, 101:{keySet:HUMAN_PLAYER_ID_SUFFIXES.NUMPAD, fire:!1, move:.1}, 102:{keySet:HUMAN_PLAYER_ID_SUFFIXES.NUMPAD, fire:!0, move:0}}, playerIdPrefix = "ChromeSender" + Math.random() + ":", playerPositions = {};
 window.__onGCastApiAvailable = function(loaded, errorInfo) {
-  loaded ? cast.games.common.sender.setup("082F937C", onSessionReady_) : (console.error("### Cast Sender SDK failed to load:"), console.dir(errorInfo));
+  loaded ? cast.games.common.sender.setup("54E247D6", onSessionReady_) : (console.error("### Cast Sender SDK failed to load:"), console.dir(errorInfo));
 };
 var updatePlayerPosition_ = function(playerId, delta) {
   void 0 == playerPositions[playerId] && (playerPositions[playerId] = .5);
